@@ -75,8 +75,8 @@ export default function school() {
     <h1 style={{color:"#ff6600"}}> Schools to get in Bhiwani</h1>
  
     {
-      schools.map((school)=>
-     <Card style={{marginTop:"3%",marginLeft:"3%",color:"#ff6600"}}>
+      schools.map((school,i)=>
+     <Card style={{marginTop:"3%",marginLeft:"3%",color:"#ff6600"}} key={i}>
       <Card.Body>
         <Card.Title style={{fontSize:"1.5rem",padding:"2%"}}>
         <Image src={school.schoolimage} alt="people"style={{width:"10%" ,height:"10%"}}/></Card.Title>

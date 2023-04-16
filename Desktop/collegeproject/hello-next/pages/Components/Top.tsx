@@ -3,16 +3,33 @@ import React from 'react'
 
 export default function Top() {
   return (
-    
+    <div>
     <div style={{display:"flex",justifyContent:"space-between",color:"#ff6600"}}>
-        <div style={{fontSize:"3rem"}}>C tour</div>
- <div style={{display:"flex",fontSize:"larger",color:"#ff6600",marginRight:"3%"}}>
-
-<div style={{marginRight:"2%"}}><Link href="/school" style={{textDecoration:"none",color:"#ff6600"}}>Schools/colleges</Link></div>
-<div style={{marginRight:"2%"}}>Famous</div>
-<div style={{marginRight:"2%"}}><Link href="/Food" style={{textDecoration:"none",color:"#ff6600"}}>Food/Restaurants</Link></div>
-<div >Food/Restaurants</div>
+        <div style={{fontSize:"3rem",marginBottom:"2%"}}>C tour (Bhiwani)</div>
 </div>
+<div
+        className="d-flex"
+        style={{
+          color: "#ff6600" ,
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+      >
+        <button style={{color:"white",backgroundColor:"#ff6600",padding:"1%",border:"2px solid white"}}>
+          <Link href="/Alumni"style={{color:"white",backgroundColor:"#ff6600",textDecoration:"none"}}><b>Famous personality</b></Link>
+        </button>
+        <button style={{color:"white",backgroundColor:"#ff6600",padding:"1%",border:"2px solid white"}}>
+          <Link href="/school"style={{color:"white",backgroundColor:"#ff6600",textDecoration:"none"}}><b>Schools/colleges</b></Link>
+        </button>
+        <button style={{color:"white",backgroundColor:"#ff6600",padding:"1%",border:"2px solid white"}}>
+        
+          <Link href="/Travel" style={{color:"white",backgroundColor:"#ff6600",textDecoration:"none"}}><b>Travel</b></Link>
+        </button>
+
+        <button style={{color:"white",backgroundColor:"#ff6600",padding:"1%",border:"2px solid white"}}>
+          <Link href="/Food"style={{color:"white",backgroundColor:"#ff6600",textDecoration:"none"}}><b>Food/Restaurants</b></Link>
+        </button>
+      </div>
 </div>
 
   )
